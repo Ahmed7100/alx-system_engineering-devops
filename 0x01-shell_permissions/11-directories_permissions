@@ -1,2 +1,2 @@
-#!/bin/bashr
+#!/bin/bash
 chmod a+x ./
