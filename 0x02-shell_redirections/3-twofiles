@@ -1,2 +1,2 @@
 #!/bin/bash
-$ sdiff /etc/passw  /etc/host
+cat /etc/passw  /etc/host
