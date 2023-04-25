@@ -1,14 +1,16 @@
-# Puppet manifest to configure ssh client with public key authentication
+# Seting up my client config file
 include stdlib
 
-file_line { 'Turn off password authentication':
-  ensure => 'present',
+file_line { 'Turn off passwd auth':
+  ensure => present,
   path   => '/etc/ssh/ssh_config',
-  line   => '    PasswordAuthetication no',
+  line   => '    PasswordAuthentication no',
+  replace => true,
 }
 
-file_line { 'Declare identity file':
-  ensure => 'present',
+file_line { 'Delare identity file':
+  ensure => present,
   path   => '/etc/ssh/ssh_config',
-  line   => '     Identityfile ~/.ssh/school',
+  line   => '     IdentityFile ~/.ssh/school',
+  replace => true,
 } 
