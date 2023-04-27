@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+# Install nginx server on an ubuntu linux distro.
+
+sudo apt-get update
+sudo apt-get -y install nginx
+
+# Open firewall port 80 (HTTP) fir nginx
+sudo ufw allow 'Nginx HTTP'
+
+# Configure Nginx to serve Hello World page.
+sudo sh -c 'echo "Hello World!" > /var/www/html/index.html'
+
+# Start Nginx service
+sudo service nginx start 
