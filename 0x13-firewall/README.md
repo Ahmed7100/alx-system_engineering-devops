@@ -1,0 +1,1 @@
+Thisb guide provides a step-by-step instructions for installing and configuring a firewall. These indtructions are designed to assist you in setting up a secure firewall to protect your network and computer systems. 
